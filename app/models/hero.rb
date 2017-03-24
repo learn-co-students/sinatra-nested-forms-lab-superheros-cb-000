@@ -8,7 +8,7 @@ class Hero
 		@power = params['power']
 		@bio = params['bio']
 
-		HEROES << self
+		@@HEROES << self
 	end
   
   def self.all 
