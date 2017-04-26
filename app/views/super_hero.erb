@@ -5,25 +5,13 @@
     <li><label>Team Motto: <input type="text" name="team[motto]"></label></li>
   </ul>
 
-  </h2>Hero 1</h2>
-  <ul>
-    <li><label>Hero's Name: <input id="member1_name" type="text" name="team[members][][name]"></label></li>
-    <li><label>Hero's Power: <input id="member1_power" type="text" name="team[members][][power]"></label></li>
-    <li><label>Hero's Biography: <input id="member1_bio" type="text" name="team[members][][bio]"></label></li>
-  </ul>
-
-</h2>Hero 2</h2>
-<ul>
-  <li><label>Hero's Name: <input id="member2_name" type="text" name="team[members][][name]"></label></li>
-  <li><label>Hero's Power: <input id="member2_power" type="text" name="team[members][][power]"></label></li>
-  <li><label>Hero's Biography: <input id="member2_bio" type="text" name="team[members][][bio]"></label></li>
-</ul>
-
-</h2>Hero 3</h2>
-<ul>
-  <li><label>Hero's Name: <input id="member3_name" type="text" name="team[members][][name]"></label></li>
-  <li><label>Hero's Power: <input id="member3_power" type="text" name="team[members][][power]"></label></li>
-  <li><label>Hero's Biography: <input id="member3_bio" type="text" name="team[members][][bio]"></label></li>
-</ul>
+  <% 3.times do |num| %>
+</h2>Hero <%= num + 1%></h2>
+    <ul>
+      <li><label>Hero's Name: <input id="member<%= num + 1%>_name" type="text" name="team[members][][name]"></label></li>
+      <li><label>Hero's Power: <input id="member<%= num + 1%>_power" type="text" name="team[members][][power]"></label></li>
+      <li><label>Hero's Biography: <input id="member<%= num + 1%>_bio" type="text" name="team[members][][bio]"></label></li>
+    </ul>
+  <% end %>
 <input type="submit" value="submit">
 </form>
