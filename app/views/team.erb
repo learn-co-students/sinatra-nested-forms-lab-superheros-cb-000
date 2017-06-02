@@ -1,3 +1,17 @@
+<html>
+<head>
+  <link rel = "stylesheet" href = "new_team_style.css" type = 'text/css'>
+</head>
+<body>
+  <div class = 'form-box'>
+  <h1><%= @team.name %></h1>
+  <h2><%= "Team Motto: #{@team.motto}" %><h2>
 
-
-
+  <% @heros.each do |hero| %>
+    <h2><%= "Hero Name: #{hero.name}" %><h2>
+    <h2><%= "Hero Power: #{hero.power}" %><h2>
+    <h2><%= "Hero Biography: #{hero.bio}" %><h2>
+    <h2><% end %><h2>
+  </div>
+</body>
+</html>
