@@ -1,3 +1,11 @@
+<h2>TEAM</h2>
+<% Team.accessor_symbols.each{ |sym| %>
+  <p><%= format_label(sym) %>: <%= @team.send(sym) %></p>
+<% } %>
 
-
-
+<% @team.superheros.each.with_index(1){ |hero, i| %>
+  <h2>SUPERHERO <%= i %></h2>
+  <% Superhero.accessor_symbols.each{ |sym| %>
+    <p><%= format_label(sym) %>: <%= hero.send(sym) %></p>
+  <% } %>
+<% } %>
