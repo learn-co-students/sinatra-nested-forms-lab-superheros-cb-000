@@ -7,6 +7,7 @@ class Member
     @name = args[:name]
     @power = args[:power]
     @bio = args[:bio]
+    MEMBERS << self
   end
 
   def Member::all
@@ -16,5 +17,5 @@ class Member
   def Member::clear
     MEMBERS.clear
   end
-  
+
 end
