@@ -12,8 +12,4 @@ class Team
     TEAMS
   end
 
-  def Team::clear
-    TEAMS.clear
-  end
-  
 end
