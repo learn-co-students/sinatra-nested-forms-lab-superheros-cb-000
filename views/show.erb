@@ -1,0 +1,20 @@
+<h1>Display your Team here</h1>
+name <%= @team.name %><br/>
+Team Motto: <%= @team.motto %><br/>
+
+  <h2>Members</h2>
+
+  <% if @members != nil %>
+  <% @members.each do |member| %>
+    <p>Hero Name: <%= member.name %></p>
+    <p>Hero Power: <%= member.power %></p>
+    <p>Hero Biography: <%= member.bio %></p>
+    <% end %>
+  <% end %>
+  </form>
+
+
+</body>
+</html>
+
+
