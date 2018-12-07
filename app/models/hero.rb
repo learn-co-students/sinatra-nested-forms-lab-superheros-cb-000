@@ -1,4 +1,4 @@
-def Hero
+class Hero
   attr_accessor :team
   attr_reader :name, :power, :bio
   @@heroes = []
@@ -13,5 +13,5 @@ def Hero
   def self.all
     @@heroes
   end
-  
+
 end
