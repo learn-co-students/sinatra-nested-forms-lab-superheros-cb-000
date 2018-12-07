@@ -8,10 +8,15 @@ class Hero
     @power = params[:power]
     @bio = params[:bio]
     @team = nil
+    @@heroes << self
   end
 
   def self.all
     @@heroes
+  end
+
+  def self.clear
+    @@heroes.clear
   end
 
 end
