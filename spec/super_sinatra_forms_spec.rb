@@ -3,6 +3,7 @@ describe App do
   describe 'GET /' do
     before do 
       get '/'
+
     end
 
     it 'sends a 200 status code' do
